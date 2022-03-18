@@ -15,3 +15,8 @@
         name: httpd
         state: restarted
         enabled: true
+
+    - name: "Installing {{task1}} "
+      yum:
+        name: "certbot"
+        state: present
