@@ -6,7 +6,8 @@
   tasks:
 
     -name: test
-    - name: "Installing {{task1}} "
+  -name: test2    
+- name: "Installing {{task1}} "
       yum:
         name: "httpd"
         state: present
