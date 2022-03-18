@@ -1,0 +1,6 @@
+---
+- name: " GIT Test"
+  hosts: amazon
+  become: true
+    - atop.yml
+  tasks:
