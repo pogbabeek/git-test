@@ -5,6 +5,7 @@
     - atop.yml
   tasks:
 
+    -name: test
     - name: "Installing {{task1}} "
       yum:
         name: "httpd"
