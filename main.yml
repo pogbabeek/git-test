@@ -16,7 +16,8 @@
         state: restarted
         enabled: true
 
-    - name: "Installing {{task1}} "
+    - name: "Innstalling {{task1}} "
       yum:
         name: "certbot"
         state: present
+
