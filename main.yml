@@ -9,3 +9,9 @@
       yum:
         name: "httpd"
         state: present
+
+    - name: "Restarting/Enabling {{task1}} Webserver."
+      service:
+        name: httpd
+        state: restarted
+        enabled: true
