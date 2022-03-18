@@ -1,0 +1,32 @@
+---
+- name: " GIT Test"
+  hosts: amazon
+  become: true
+    - atop.yml
+  tasks:
+
+    - name: "Installing {{task1}} "
+      yum:
+        name: "httpd"
+        state: present
+        
+     - name: "Installing {{atop}} "
+      yum:
+        name: "atop"
+        state: present
+
+    - name: "Restarting/Enabling {{task1}} Webserver."
+      service:
+        name: httpd
+        state: restarted
+        enabled: true
+
+    - name: "Innstalling {{task1}} "
+      yum:
+        name: "certbot"
+        state: present
+
+    -name some test added 1
+
+- name: "creting virtaulhost directory"
+- name: "restarting/enable apache"
