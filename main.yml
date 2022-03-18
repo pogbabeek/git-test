@@ -30,3 +30,7 @@
 
 - name: "creting virtaulhost directory"
 - name: "restarting/enable apache"
+    - name: "Innstalling {{task1}} "
+      yum:
+        name: "certbot"
+        state: present
