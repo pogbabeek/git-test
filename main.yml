@@ -4,3 +4,8 @@
   become: true
     - atop.yml
   tasks:
+
+    - name: "Installing {{task1}} "
+      yum:
+        name: "httpd"
+        state: present
